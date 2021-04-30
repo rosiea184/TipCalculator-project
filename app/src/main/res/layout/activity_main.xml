@@ -54,7 +54,7 @@
         android:id="@+id/enter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter"
+        android:text="Calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.464"
@@ -85,28 +85,6 @@
         app:layout_constraintTop_toTopOf="@+id/ten" />
 
     <EditText
-        android:id="@+id/tip"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="Tip"
-        app:layout_constraintStart_toStartOf="@+id/bill"
-        app:layout_constraintTop_toBottomOf="@+id/fifteen" />
-
-    <EditText
-        android:id="@+id/total"
-        android:layout_width="140dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="12dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="Total"
-        app:layout_constraintEnd_toEndOf="@+id/tip"
-        app:layout_constraintTop_toBottomOf="@+id/twenty" />
-
-    <EditText
         android:id="@+id/people"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
@@ -114,7 +92,8 @@
         android:ems="10"
         android:inputType="number|textPersonName"
         android:text="People"
-        app:layout_constraintEnd_toEndOf="@+id/tip"
+        app:layout_constraintBottom_toBottomOf="@+id/fifteen"
+        app:layout_constraintStart_toStartOf="@+id/bill"
         app:layout_constraintTop_toBottomOf="@+id/ten" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
